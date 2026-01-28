@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mens_java_web?useSSL=false</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">21239886.e/desilva</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping class="hibernate.ActiveStatus"/>
+    <mapping class="hibernate.UserStatus"/>
+    <mapping class="hibernate.User"/>
+    <mapping class="hibernate.City"/>
+    <mapping class="hibernate.District"/>
+    <mapping class="hibernate.Province"/>
+    <mapping class="hibernate.Address"/>
+    <mapping class="hibernate.Batch"/>
+    <mapping class="hibernate.Size"/>
+    <mapping class="hibernate.BatchDetails"/>
+    <mapping class="hibernate.Brand"/>
+    <mapping class="hibernate.Varient"/>
+    <mapping class="hibernate.BrandHasVarient"/>
+    <mapping class="hibernate.Category"/>
+    <mapping class="hibernate.Color"/>
+    <mapping class="hibernate.ProductReview"/>
+    <mapping class="hibernate.SizeHasCategory"/>
+    <mapping class="hibernate.SubCategory"/>
+    <mapping class="hibernate.Product"/>
+    <mapping class="hibernate.AvailabilityReminder"/>
+    <mapping class="hibernate.Wishlist"/>
+    <mapping class="hibernate.Cart"/>
+    <mapping class="hibernate.DeliveryCost"/>
+    <mapping class="hibernate.Coupon"/>
+    <mapping class="hibernate.CouponDiscounts"/>
+    <mapping class="hibernate.DeliveryStatus"/>
+    <mapping class="hibernate.Invoice"/>
+    <mapping class="hibernate.InvoiceItems"/>
+    <mapping class="hibernate.Admin"/>
+
+  </session-factory>
+</hibernate-configuration>
